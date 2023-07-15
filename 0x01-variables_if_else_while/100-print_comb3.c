@@ -12,7 +12,7 @@ int main(void)
 
 	while (i < 10)
 	{
-	while (h < 10)
+		while (h < 10)
 		{
 			putchar('0' + i);
 			putchar('0' + h);
@@ -26,5 +26,6 @@ int main(void)
 		i++;
 		h = i + 1;
 	}
+	putchar('\n');
 	return (0);
 }
