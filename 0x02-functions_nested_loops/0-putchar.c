@@ -1,10 +1,6 @@
 #include <stdio.h>
+#include "main.h"
 
-/**
- * _putchar - Custom function to output a character
- * @c: text to bw printed
- * Return: On success, returns the character to be printed
- */
 void _putchar(char c)
 {
 	putchar(c);
