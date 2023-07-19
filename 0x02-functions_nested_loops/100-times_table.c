@@ -4,7 +4,6 @@
  * print_times_table - prints the n times table, starting with 0
  * @n: the number of times table to print
  */
-
 void print_times_table(int n)
 {
 	int i, j;
@@ -22,29 +21,21 @@ void print_times_table(int n)
 			{
 				_putchar(',');
 				_putchar(' ');
+
 				if (result < 10)
-				{
-					_putchar(' ');
-					_putchar(' ');
-				}
-				else if (result < 100)
 					_putchar(' ');
 			}
-			if (result < 10)
-			{
-				_putchar('0' + result);
-			}
-			else if (result < 100)
-			{
-				_putchar('0' + result / 10);
-				_putchar('0' + result % 10);
-			}
-			else
-			{
+
+			if (result < 100)
+				_putchar(' ');
+
+			if (result >= 100)
 				_putchar('0' + result / 100);
+
+			if (result >= 10)
 				_putchar('0' + (result / 10) % 10);
-				_putchar('0' + result % 10);
-			}
+
+			_putchar('0' + result % 10);
 		}
 		_putchar('\n');
 	}
