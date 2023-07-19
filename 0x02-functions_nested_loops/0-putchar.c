@@ -1,16 +1,11 @@
-#include <stdio.h>
 #include "main.h"
-
-void _putchar(char c)
-{
-	putchar(c);
-}
 
 /**
  * main - Entry point of the program
  *
  * Return: Always 0 (indicating successful execution)
  */
+
 int main(void)
 {
 	char text[] = "_putchar\n";
