@@ -5,6 +5,7 @@
  * _strcpy - copies the string pointed to another place
  * @dest: destination
  * @src: origination source
+ * Return: destination
 */
 
 char *_strcpy(char *dest, char *src)
