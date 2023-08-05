@@ -7,10 +7,15 @@
  * Return: 0
 */
 
-int main(int argc, char *argv[])
+int main(int argc, char *argv[]__attribute__((unused)))
 {
-	(void) argv;
+	int index, sum;
 
-	printf("%d\n", argc);
+	sum = 0;
+	for (index = 1; index < argc; index++)
+	{
+		sum = sum + 1;
+	}
+	printf("%d\n", sum);
 	return (0);
 }
