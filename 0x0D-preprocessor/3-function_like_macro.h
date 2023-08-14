@@ -3,5 +3,4 @@
 
 #define ABS(x) (((x) > 0) ? (x) : -(x))
 
-#endif 
-/* an ABS header function like macro */
+#endif /* an ABS header function like macro */
