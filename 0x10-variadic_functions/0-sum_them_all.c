@@ -16,6 +16,7 @@ int sum_them_all(const unsigned int n, ...)
 	for (i = 0; i < n; i++)
 	{
 		unsigned int x = va_arg(args, unsigned int);
+
 		if (n != 0)
 			sum += x;
 		else
