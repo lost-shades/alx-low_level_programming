@@ -19,22 +19,20 @@ list_t *add_node(list_t **head, const char *str)
 		return (NULL);
 
 	sen = strdup(str);
-	if (sen == NULL)
+	if (str == NULL)
 	{
-		free(new);
-		return (NULL);
+		sen = NULL;
+		i = 0;
 	}
-
-	i = 0;
-	while (str[i])
+	else
 	{
-		i++;
+		sen = strdup(str);
+		i = strlen(str);
 	}
-
 	new->len = i;
 	new->str = sen;
 	new->next = *head;
 	*head = new;
 
-	return (new);
+	return (*head);
 }
