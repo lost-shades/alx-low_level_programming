@@ -14,6 +14,7 @@ printf("I bore my house upon my back!\n");
 /*
 * __attribute__((constructor)) is a GCC-specific attribute that specifies
 * the before_main function should be executed before the main function.
+* before_main - causes a function to be executed before the main function
 */
 
 __attribute__((constructor))
