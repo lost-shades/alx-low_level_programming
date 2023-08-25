@@ -2,7 +2,7 @@
 #include "lists.h"
 
 /**
-* print_pre_main_message - function that prints a specific before the main is executed
+* print_pre_main_message - function that prints a msg before the main is executed
 */
 
 void print_pre_main_message(void) 
